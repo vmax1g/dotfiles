@@ -228,7 +228,7 @@ client.urgent            $peach    $base  $peach   $overlay0  $peach
 client.placeholder       $overlay0 $base  $text    $overlay0  $overlay0
 client.background        $base
 
-# gaps
+#  gaps         
 gaps inner 10
 gaps outer 5
 
