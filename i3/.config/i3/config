@@ -15,7 +15,7 @@ set $mod Mod4
 # set $mod Mod1
 
 exec --no-startup-id picom
-exec_always --no-startup-id feh --bg-scale ~/nice-blue-background.png
+exec_always --no-startup-id feh --bg-scale ~/.config/backgrounds/nice-blue-background.png
 #exec --no-startup-id xrdb -merge ~/.Xresources
 #exec_always --no-startup-id setxkbmap -option ctrl:nocaps
 
@@ -82,7 +82,10 @@ bindsym $mod+Tab exec --no-startup-id rofi -show window
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $mod+l exec i3lock -i /home/vmax/.config/backgrounds/nice-blue-background.png
+
+#launch browser
+bindsym $mod+f exec thorium-browser
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -103,7 +106,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+#bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -232,4 +235,5 @@ client.background        $base
 gaps inner 10
 gaps outer 5
 
-
+#shutdown menu
+bindsym $mod+BackSpace exec /home/vmax/scripts/rofi.sh
