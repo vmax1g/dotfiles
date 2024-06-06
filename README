@@ -1,3 +1,3 @@
-my dotfiles for i3 for arch linux that are based on typecraft-dev`s 
+my i3 dotfiles for arch linux 
 
 dependencies: ttf-meslo-nerd alacritty polybar i3 feh picom rofi stow xorg-xrandr
