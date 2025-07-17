@@ -15,4 +15,4 @@ stow scripts
 
 echo "exec i3" ~/.zshrc
 
-echo "installation done! now start xorg with i3"
+echo "installation done! now start xorg with i3 or install an display manager"
